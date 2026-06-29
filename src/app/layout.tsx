@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from '@next/third-parties/google';
 import Navbar from "@/components/Navbar";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
@@ -23,6 +24,7 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
   return (
     <html
       lang="en"
@@ -35,6 +37,7 @@ export default function RootLayout({
         <footer className="border-t border-gray-100 py-10 px-10 text-center text-xs text-gray-500">
           © {new Date().getFullYear()} TheGCraft. Built with Grid & Git philosophy.
         </footer>
+        {gaId && <GoogleAnalytics gaId={gaId} />}
       </body>
     </html>
   );
