@@ -4,12 +4,12 @@ export default function SocialLinks() {
     const socialLinks = [
         {
             name: "LinkedIn",
-            href: "https://www.linkedin.com/in/guillermosegura/",
+            href: "https://www.linkedin.com/in/guillermosegurac/",
             icon: <FaLinkedin className="w-5 h-5" />,
         },
         {
             name: "Xing",
-            href: "https://www.xing.com/profile/Guillermo_Segura8/cv",
+            href: "https://www.xing.com/profile/GuillermoAlberto_SeguraCruz",
             icon: <FaXing className="w-5 h-5" />,
         },
         {
@@ -25,8 +25,8 @@ export default function SocialLinks() {
     ];
 
     return (
-        <div className="w-full text-center mt-8 pt-8 border-t border-zinc-100 dark:border-zinc-800/50">
-            <h2 className="text-4xl font-bold tracking-tighter mb-6 dark:text-zinc-100">
+        <div className="w-full text-center mt-4 pt-8 border-t border-zinc-100 dark:border-zinc-800/50">
+            <h2 className="text-3xl font-bold tracking-tighter mb-6 dark:text-zinc-100">
                 Find me elsewhere
             </h2>
 
