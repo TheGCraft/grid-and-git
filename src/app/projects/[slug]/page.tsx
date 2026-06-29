@@ -45,7 +45,7 @@ export default async function ProjectPage({ params }: Props) {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
 
                         <a
-                            className="bg-blue-200 p-2 text-sm font-bold text-white rounded-2xl hover:text-blue-600 transition-colors flex items-center gap-2 group"
+                            className="p-2 text-sm font-bold text-gray-600 rounded-2xl hover:text-blue-600 transition-colors flex items-center gap-2 group mt-10"
                             href={project.url}
                             target="_blank"
                             rel="noopener noreferrer"
@@ -57,7 +57,7 @@ export default async function ProjectPage({ params }: Props) {
                         <div className="flex mt-10 md:justify-end">
                             <Link
                                 href="/"
-                                className="text-sm font-semibold text-gray-200 hover:text-blue-600 transition-colors flex items-center gap-2 group"
+                                className="text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors flex items-center gap-2 group"
                             >
                                 <span className="group-hover:-translate-x-1 transition-transform">←</span>
                                 Back to Projects
