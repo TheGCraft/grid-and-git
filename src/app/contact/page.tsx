@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
     return (
         <main className="max-w-3xl mx-auto p-10 lg:p-20">
-            <header className="max-w-2xl mx-auto mb-12 text-center">
+            <header className="max-w-2xl mx-auto mb-2 text-center">
                 <h1 className="text-4xl font-extrabold tracking-tighter mb-4 dark:text-zinc-100">
                     Let’s Build Something Together<span className="text-blue-600">.</span>
                 </h1>
@@ -23,7 +23,7 @@ export default function ContactPage() {
                 <ContactForm />
             </section>
 
-            <section className="mt-32 text-center">
+            <section className="mt-12 text-center">
                 <SocialLinks />
 
             </section>

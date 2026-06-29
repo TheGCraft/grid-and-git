@@ -32,7 +32,7 @@ export default function RootLayout({
         <Navbar />
         <main>{children}
         </main>
-        <footer className="border-t border-gray-100 py-10 px-10 text-center text-xs text-gray-400">
+        <footer className="border-t border-gray-100 py-10 px-10 text-center text-xs text-gray-500">
           © {new Date().getFullYear()} TheGCraft. Built with Grid & Git philosophy.
         </footer>
       </body>

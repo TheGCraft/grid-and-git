@@ -37,7 +37,7 @@ export default function SocialLinks() {
                         href={link.href}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-2xl text-zinc-500 hover:text-blue-600 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
+                        className="text-2xl text-zinc-700 hover:text-blue-600 dark:text-zinc-400 dark:hover:text-zinc-100 transition-colors"
                         aria-label={link.name}
                     >
                         {link.icon}
