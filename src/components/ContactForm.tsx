@@ -7,7 +7,7 @@ import * as z from "zod";
 const contactSchema = z.object({
     name: z.string().min(2, "Please include your name"),
     email: z.email("Please provide a valid email address"),
-    message: z.string().min(10, "Messages should be at least 10 characters long")
+    message: z.string().min(10, "Messages should be at least 10 characters long").max(1000, "Message is too long")
 });
 
 type ContactFormData = z.infer<typeof contactSchema>;
@@ -75,6 +75,13 @@ export default function ContactForm() {
                     type="email"
                     className="w-full p-3 rounded-lg border border-zinc-200 dark:border-zinc-800 bg-transparent focus:outline-none focus:border-blue-500 transition-colors"
                     placeholder="hello@example.com"
+                />
+                <input
+                    type="text"
+                    name="username_hp"
+                    className="hidden"
+                    tabIndex={-1}
+                    autoComplete="off"
                 />
                 {errors.email && (
                     <p className="text-red-500 text-xs mt-1 font-medium">{errors.email.message}</p>
